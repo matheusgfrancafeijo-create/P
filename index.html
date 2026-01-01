@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Roblox Lua AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🤖 Roblox Lua AI</h1>
+  <p>Gerador inteligente de scripts Lua</p>
+</header>
+
+<div class="tabs">
+  <button onclick="openTab('generator')">Gerador</button>
+  <button onclick="openTab('chat')">Chat IA</button>
+</div>
+
+<section id="generator" class="tab active">
+  <h2>🎮 Gerador de Script</h2>
+  <textarea id="prompt" placeholder="Ex: crie um NPC que persegue o jogador..."></textarea>
+  <button onclick="generate()">Gerar Script</button>
+  <pre id="result"></pre>
+  <button onclick="copyScript()">📋 Copiar Script</button>
+</section>
+
+<section id="chat" class="tab">
+  <h2>💬 Chat Assistente</h2>
+  <div id="chatBox"></div>
+  <input id="chatInput" placeholder="Pergunte algo sobre Roblox Lua...">
+  <button onclick="sendMessage()">Enviar</button>
+</section>
+
+<footer>
+  <p>Feito para devs Roblox 🚀</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
